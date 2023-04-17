@@ -23,10 +23,13 @@ public class UserDaoJDBCImpl implements UserDao {
                 " age DOUBLE NOT NULL, PRIMARY KEY (id)," +
                 " UNIQUE INDEX id_UNIQUE ( id ASC ) VISIBLE)";
         try (Statement statement = connection.createStatement()) {
-            Util.getConnection().setAutoCommit(false);
+
+            connection.setAutoCommit(false);
             statement.executeUpdate(table);
-            Util.getConnection().commit();
+            connection.commit();
+            connection.setAutoCommit(true);
         } catch (SQLException e) {
+
 
         }
 
@@ -36,9 +39,10 @@ public class UserDaoJDBCImpl implements UserDao {
     public void dropUsersTable() {
         String dropTable = "DROP TABLE usersTable";
         try (Statement statement = connection.createStatement()) {
-            Util.getConnection().setAutoCommit(false);
+            connection.setAutoCommit(false);
             statement.executeUpdate(dropTable);
-            Util.getConnection().commit();
+            connection.commit();
+            connection.setAutoCommit(true);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -50,13 +54,15 @@ public class UserDaoJDBCImpl implements UserDao {
         String sql = " INSERT INTO usersTable (name,lastName, age) VALUES (?, ?, ?)";
 
         try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
-
+            connection.setAutoCommit(false);
             preparedStatement.setString(1, name);
             preparedStatement.setString(2, lastName);
             preparedStatement.setByte(3, age);
-            Util.getConnection().setAutoCommit(false);
+
             preparedStatement.executeUpdate();
-            Util.getConnection().commit();
+            connection.commit();
+            connection.setAutoCommit(true);
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -67,10 +73,12 @@ public class UserDaoJDBCImpl implements UserDao {
 
         String remove = "DELETE FROM usersTable WHERE ID = '?'";
         try (PreparedStatement preparedStatement = connection.prepareStatement(remove)) {
+            connection.setAutoCommit(false);
             preparedStatement.setLong(1, id);
-            Util.getConnection().setAutoCommit(false);
+
             preparedStatement.executeUpdate();
-            Util.getConnection().commit();
+            connection.commit();
+            connection.setAutoCommit(true);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -105,9 +113,10 @@ public class UserDaoJDBCImpl implements UserDao {
     public void cleanUsersTable() {
         String cleanTable = "TRUNCATE TABLE usersTable";
         try (Statement statement = connection.createStatement()) {
-            Util.getConnection().setAutoCommit(false);
+            connection.setAutoCommit(false);
             statement.executeUpdate(cleanTable);
-            Util.getConnection().commit();
+            connection.commit();
+            connection.setAutoCommit(true);
         } catch (SQLException e) {
             e.printStackTrace();
         }
