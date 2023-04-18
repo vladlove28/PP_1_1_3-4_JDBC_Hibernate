@@ -17,7 +17,7 @@ public class UserDaoJDBCImpl implements UserDao {
     }
 
     public void createUsersTable() {
-        String table = " CREATE TABLE usersTable (id INTEGER NOT NULL AUTO_INCREMENT," +
+        String table = " CREATE TABLE userTable (id INTEGER NOT NULL AUTO_INCREMENT," +
                 " name VARCHAR(45) NOT NULL," +
                 " lastName VARCHAR(45) NOT NULL," +
                 " age DOUBLE NOT NULL, PRIMARY KEY (id)," +
@@ -27,22 +27,30 @@ public class UserDaoJDBCImpl implements UserDao {
             connection.setAutoCommit(false);
             statement.executeUpdate(table);
             connection.commit();
+            connection.rollback();
             connection.setAutoCommit(true);
         } catch (SQLException e) {
 
-
+        } finally {
+            try {
+                connection.setAutoCommit(true);
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
         }
 
     }
 
     // удалить таблицу
     public void dropUsersTable() {
-        String dropTable = "DROP TABLE usersTable";
+        String dropTable = "DROP TABLE userTable";
         try (Statement statement = connection.createStatement()) {
             connection.setAutoCommit(false);
             statement.executeUpdate(dropTable);
             connection.commit();
+
             connection.setAutoCommit(true);
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -51,7 +59,7 @@ public class UserDaoJDBCImpl implements UserDao {
     }
 
     public void saveUser(String name, String lastName, byte age) {
-        String sql = " INSERT INTO usersTable (name,lastName, age) VALUES (?, ?, ?)";
+        String sql = " INSERT INTO userTable (name,lastName, age) VALUES (?, ?, ?)";
 
         try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
             connection.setAutoCommit(false);
@@ -71,7 +79,7 @@ public class UserDaoJDBCImpl implements UserDao {
 
     public void removeUserById(long id) {
 
-        String remove = "DELETE FROM usersTable WHERE ID = '?'";
+        String remove = "DELETE FROM userTable WHERE ID = '?'";
         try (PreparedStatement preparedStatement = connection.prepareStatement(remove)) {
             connection.setAutoCommit(false);
             preparedStatement.setLong(1, id);
@@ -111,7 +119,7 @@ public class UserDaoJDBCImpl implements UserDao {
     }
 
     public void cleanUsersTable() {
-        String cleanTable = "TRUNCATE TABLE usersTable";
+        String cleanTable = "TRUNCATE TABLE userTable";
         try (Statement statement = connection.createStatement()) {
             connection.setAutoCommit(false);
             statement.executeUpdate(cleanTable);

@@ -31,6 +31,13 @@ public class Main {
         userServiceImpl.cleanUsersTable();
         userServiceImpl.dropUsersTable();
 
+
+
+
         // реализуйте алгоритм здесь
+
+
+
+
     }
 }

@@ -5,89 +5,154 @@
       <DefaultCasing>mixed/mixed</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
       <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
-      <Grants>|root||root|localhost|ALTER|G
+      <Grants>|root||Vladislav Alexseev|localhost|ALTER|G
+|root||root|localhost|ALTER|G
+|root||Vladislav Alexseev|localhost|ALTER ROUTINE|G
 |root||root|localhost|ALTER ROUTINE|G
+|root||Vladislav Alexseev|localhost|APPLICATION_PASSWORD_ADMIN|G
 |root||root|localhost|APPLICATION_PASSWORD_ADMIN|G
+|root||Vladislav Alexseev|localhost|AUDIT_ABORT_EXEMPT|G
 |root||mysql.infoschema|localhost|AUDIT_ABORT_EXEMPT|G
 |root||mysql.session|localhost|AUDIT_ABORT_EXEMPT|G
 |root||mysql.sys|localhost|AUDIT_ABORT_EXEMPT|G
 |root||root|localhost|AUDIT_ABORT_EXEMPT|G
+|root||Vladislav Alexseev|localhost|AUDIT_ADMIN|G
 |root||root|localhost|AUDIT_ADMIN|G
+|root||Vladislav Alexseev|localhost|AUTHENTICATION_POLICY_ADMIN|G
 |root||mysql.session|localhost|AUTHENTICATION_POLICY_ADMIN|G
 |root||root|localhost|AUTHENTICATION_POLICY_ADMIN|G
+|root||Vladislav Alexseev|localhost|BACKUP_ADMIN|G
 |root||mysql.session|localhost|BACKUP_ADMIN|G
 |root||root|localhost|BACKUP_ADMIN|G
+|root||Vladislav Alexseev|localhost|BINLOG_ADMIN|G
 |root||root|localhost|BINLOG_ADMIN|G
+|root||Vladislav Alexseev|localhost|BINLOG_ENCRYPTION_ADMIN|G
 |root||root|localhost|BINLOG_ENCRYPTION_ADMIN|G
+|root||Vladislav Alexseev|localhost|CLONE_ADMIN|G
 |root||mysql.session|localhost|CLONE_ADMIN|G
 |root||root|localhost|CLONE_ADMIN|G
+|root||Vladislav Alexseev|localhost|CONNECTION_ADMIN|G
 |root||mysql.session|localhost|CONNECTION_ADMIN|G
 |root||root|localhost|CONNECTION_ADMIN|G
+|root||Vladislav Alexseev|localhost|CREATE|G
 |root||root|localhost|CREATE|G
+|root||Vladislav Alexseev|localhost|CREATE ROLE|G
 |root||root|localhost|CREATE ROLE|G
+|root||Vladislav Alexseev|localhost|CREATE ROUTINE|G
 |root||root|localhost|CREATE ROUTINE|G
+|root||Vladislav Alexseev|localhost|CREATE TABLESPACE|G
 |root||root|localhost|CREATE TABLESPACE|G
+|root||Vladislav Alexseev|localhost|CREATE TEMPORARY TABLES|G
 |root||root|localhost|CREATE TEMPORARY TABLES|G
+|root||Vladislav Alexseev|localhost|CREATE USER|G
 |root||root|localhost|CREATE USER|G
+|root||Vladislav Alexseev|localhost|CREATE VIEW|G
 |root||root|localhost|CREATE VIEW|G
+|root||Vladislav Alexseev|localhost|DELETE|G
 |root||root|localhost|DELETE|G
+|root||Vladislav Alexseev|localhost|DROP|G
 |root||root|localhost|DROP|G
+|root||Vladislav Alexseev|localhost|DROP ROLE|G
 |root||root|localhost|DROP ROLE|G
+|root||Vladislav Alexseev|localhost|ENCRYPTION_KEY_ADMIN|G
 |root||root|localhost|ENCRYPTION_KEY_ADMIN|G
+|root||Vladislav Alexseev|localhost|EVENT|G
 |root||root|localhost|EVENT|G
+|root||Vladislav Alexseev|localhost|EXECUTE|G
 |root||root|localhost|EXECUTE|G
+|root||Vladislav Alexseev|localhost|FILE|G
 |root||root|localhost|FILE|G
+|root||Vladislav Alexseev|localhost|FIREWALL_EXEMPT|G
 |root||mysql.infoschema|localhost|FIREWALL_EXEMPT|G
 |root||mysql.session|localhost|FIREWALL_EXEMPT|G
 |root||mysql.sys|localhost|FIREWALL_EXEMPT|G
 |root||root|localhost|FIREWALL_EXEMPT|G
+|root||Vladislav Alexseev|localhost|FLUSH_OPTIMIZER_COSTS|G
 |root||root|localhost|FLUSH_OPTIMIZER_COSTS|G
+|root||Vladislav Alexseev|localhost|FLUSH_STATUS|G
 |root||root|localhost|FLUSH_STATUS|G
+|root||Vladislav Alexseev|localhost|FLUSH_TABLES|G
 |root||root|localhost|FLUSH_TABLES|G
+|root||Vladislav Alexseev|localhost|FLUSH_USER_RESOURCES|G
 |root||root|localhost|FLUSH_USER_RESOURCES|G
+|root||Vladislav Alexseev|localhost|GROUP_REPLICATION_ADMIN|G
 |root||root|localhost|GROUP_REPLICATION_ADMIN|G
+|root||Vladislav Alexseev|localhost|GROUP_REPLICATION_STREAM|G
 |root||root|localhost|GROUP_REPLICATION_STREAM|G
+|root||Vladislav Alexseev|localhost|INDEX|G
 |root||root|localhost|INDEX|G
+|root||Vladislav Alexseev|localhost|INNODB_REDO_LOG_ARCHIVE|G
 |root||root|localhost|INNODB_REDO_LOG_ARCHIVE|G
+|root||Vladislav Alexseev|localhost|INNODB_REDO_LOG_ENABLE|G
 |root||root|localhost|INNODB_REDO_LOG_ENABLE|G
+|root||Vladislav Alexseev|localhost|INSERT|G
 |root||root|localhost|INSERT|G
+|root||Vladislav Alexseev|localhost|LOCK TABLES|G
 |root||root|localhost|LOCK TABLES|G
+|root||Vladislav Alexseev|localhost|PASSWORDLESS_USER_ADMIN|G
 |root||root|localhost|PASSWORDLESS_USER_ADMIN|G
+|root||Vladislav Alexseev|localhost|PERSIST_RO_VARIABLES_ADMIN|G
 |root||mysql.session|localhost|PERSIST_RO_VARIABLES_ADMIN|G
 |root||root|localhost|PERSIST_RO_VARIABLES_ADMIN|G
+|root||Vladislav Alexseev|localhost|PROCESS|G
 |root||root|localhost|PROCESS|G
+|root||Vladislav Alexseev|localhost|REFERENCES|G
 |root||root|localhost|REFERENCES|G
+|root||Vladislav Alexseev|localhost|RELOAD|G
 |root||root|localhost|RELOAD|G
+|root||Vladislav Alexseev|localhost|REPLICATION CLIENT|G
 |root||root|localhost|REPLICATION CLIENT|G
+|root||Vladislav Alexseev|localhost|REPLICATION SLAVE|G
 |root||root|localhost|REPLICATION SLAVE|G
+|root||Vladislav Alexseev|localhost|REPLICATION_APPLIER|G
 |root||root|localhost|REPLICATION_APPLIER|G
+|root||Vladislav Alexseev|localhost|REPLICATION_SLAVE_ADMIN|G
 |root||root|localhost|REPLICATION_SLAVE_ADMIN|G
+|root||Vladislav Alexseev|localhost|RESOURCE_GROUP_ADMIN|G
 |root||root|localhost|RESOURCE_GROUP_ADMIN|G
+|root||Vladislav Alexseev|localhost|RESOURCE_GROUP_USER|G
 |root||root|localhost|RESOURCE_GROUP_USER|G
+|root||Vladislav Alexseev|localhost|ROLE_ADMIN|G
 |root||root|localhost|ROLE_ADMIN|G
+|root||Vladislav Alexseev|localhost|SELECT|G
 |root||mysql.infoschema|localhost|SELECT|G
 |root||root|localhost|SELECT|G
+|root||Vladislav Alexseev|localhost|SENSITIVE_VARIABLES_OBSERVER|G
 |root||root|localhost|SENSITIVE_VARIABLES_OBSERVER|G
+|root||Vladislav Alexseev|localhost|SERVICE_CONNECTION_ADMIN|G
 |root||root|localhost|SERVICE_CONNECTION_ADMIN|G
+|root||Vladislav Alexseev|localhost|SESSION_VARIABLES_ADMIN|G
 |root||mysql.session|localhost|SESSION_VARIABLES_ADMIN|G
 |root||root|localhost|SESSION_VARIABLES_ADMIN|G
+|root||Vladislav Alexseev|localhost|SET_USER_ID|G
 |root||root|localhost|SET_USER_ID|G
+|root||Vladislav Alexseev|localhost|SHOW DATABASES|G
 |root||root|localhost|SHOW DATABASES|G
+|root||Vladislav Alexseev|localhost|SHOW VIEW|G
 |root||root|localhost|SHOW VIEW|G
+|root||Vladislav Alexseev|localhost|SHOW_ROUTINE|G
 |root||root|localhost|SHOW_ROUTINE|G
+|root||Vladislav Alexseev|localhost|SHUTDOWN|G
 |root||mysql.session|localhost|SHUTDOWN|G
 |root||root|localhost|SHUTDOWN|G
+|root||Vladislav Alexseev|localhost|SUPER|G
 |root||mysql.session|localhost|SUPER|G
 |root||root|localhost|SUPER|G
+|root||Vladislav Alexseev|localhost|SYSTEM_USER|G
 |root||mysql.infoschema|localhost|SYSTEM_USER|G
 |root||mysql.session|localhost|SYSTEM_USER|G
 |root||mysql.sys|localhost|SYSTEM_USER|G
 |root||root|localhost|SYSTEM_USER|G
+|root||Vladislav Alexseev|localhost|SYSTEM_VARIABLES_ADMIN|G
 |root||mysql.session|localhost|SYSTEM_VARIABLES_ADMIN|G
 |root||root|localhost|SYSTEM_VARIABLES_ADMIN|G
+|root||Vladislav Alexseev|localhost|TABLE_ENCRYPTION_ADMIN|G
 |root||root|localhost|TABLE_ENCRYPTION_ADMIN|G
+|root||Vladislav Alexseev|localhost|TRIGGER|G
 |root||root|localhost|TRIGGER|G
+|root||Vladislav Alexseev|localhost|UPDATE|G
 |root||root|localhost|UPDATE|G
+|root||Vladislav Alexseev|localhost|XA_RECOVER_ADMIN|G
 |root||root|localhost|XA_RECOVER_ADMIN|G
 |root||root|localhost|grant option|G
 performance_schema|schema||mysql.session|localhost|SELECT|G
@@ -1011,66 +1076,73 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <schema id="293" parent="1" name="baseForKata">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <user id="294" parent="1" name="mysql.infoschema">
+    <schema id="294" parent="1" name="my_db">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <user id="295" parent="1" name="mysql.infoschema">
       <CanLogin>0</CanLogin>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <user id="295" parent="1" name="mysql.session">
+    <user id="296" parent="1" name="mysql.session">
       <CanLogin>0</CanLogin>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <user id="296" parent="1" name="mysql.sys">
+    <user id="297" parent="1" name="mysql.sys">
       <CanLogin>0</CanLogin>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <user id="297" parent="1" name="root">
+    <user id="298" parent="1" name="root">
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <table id="298" parent="293" name="usersTable">
+    <user id="299" parent="1" name="Vladislav Alexseev">
+      <Host>localhost</Host>
+      <Plugin>caching_sha2_password</Plugin>
+    </user>
+    <table id="300" parent="293" name="userTable">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <column id="299" parent="298" name="id">
+    <column id="301" parent="300" name="id">
       <AutoIncrement>5</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="300" parent="298" name="name">
+    <column id="302" parent="300" name="name">
       <DasType>varchar(45)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="301" parent="298" name="lastName">
+    <column id="303" parent="300" name="lastName">
       <DasType>varchar(45)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="302" parent="298" name="age">
+    <column id="304" parent="300" name="age">
       <DasType>double|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <index id="303" parent="298" name="PRIMARY">
+    <index id="305" parent="300" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="304" parent="298" name="id_UNIQUE">
+    <index id="306" parent="300" name="id_UNIQUE">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="305" parent="298" name="PRIMARY">
+    <key id="307" parent="300" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="306" parent="298" name="id_UNIQUE">
+    <key id="308" parent="300" name="id_UNIQUE">
       <UnderlyingIndexName>id_UNIQUE</UnderlyingIndexName>
     </key>
   </database-model>
