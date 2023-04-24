@@ -27,6 +27,7 @@ public class UserServiceImpl extends Util implements UserService {
 //        userDaoJDBC.saveUser(name, lastName, age);
         userDaoHibernate.saveUser(name, lastName, age);
         System.out.println("User с именем - " + name + " добавлен в базу данных");
+
     }
 
     public void removeUserById(long id) {
